@@ -111,8 +111,8 @@
       ]
     },
     "C:\\Users\\laza7\\OneDrive\\Escritorio\\unidao\\contracts\\governanceToken.sol": {
-      "lastModificationDate": 1694204376121,
-      "contentHash": "be873bfbb97dc46185c438babf325081",
+      "lastModificationDate": 1694206246551,
+      "contentHash": "2ac0d04946aec97f3b2d5efaefdc0a05",
       "sourceName": "contracts/governanceToken.sol",
       "solcConfig": {
         "version": "0.8.19",

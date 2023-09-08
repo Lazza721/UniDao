@@ -19,9 +19,16 @@ contract GovernanceToken is ERC20Votes{
         address to,
         uint256 amount
         )internal override (ERC20Votes){
-        super._mint(to, amount); //we inherit and mint to a 
+        super._afterTokenTransfer(from, to, amount); //we inherit annd send it from an address to another
     }
 
+    function _mint(address to, uint256 amount)internal override(ERC20Votes){
+        super._mint(to, amount); //this fucntion will mint tokens, producing tokens
+    }
+
+    function _burn(address account, uint256 amount)internal override(ERC20Votes){
+        super._burn(account, amount); //we can burn tokens if we want to
+    }
 
 
 }
